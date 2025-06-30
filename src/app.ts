@@ -11,7 +11,14 @@ dotenv.config();
 const app = express();
 
 // Middlewares
-app.use(cors());
+app.use(
+  cors({
+  origin: ['http://localhost:5173', 'https://your-frontend.vercel.app'],
+ // allow your frontend dev origin
+    credentials: true, // if you're using cookies or sessions
+  })
+);
+
 app.use(express.json());
 
 app.use("/api", authRoutes);
