@@ -13,8 +13,11 @@ const app = express();
 // Middlewares
 app.use(
   cors({
-  origin: ['http://localhost:5173', 'https://your-frontend.vercel.app'],
- // allow your frontend dev origin
+    origin: [
+      "http://localhost:5173",
+      "https://ph-event-management.netlify.app",
+    ],
+    // allow your frontend dev origin
     credentials: true, // if you're using cookies or sessions
   })
 );
