@@ -20,23 +20,6 @@ Built with **Node.js**, **Express**, and **MongoDB**, this RESTful API powers th
 
 ---
 
-## 📁 Folder Structure
-
-```
-
-eventease-backend/
-├── controllers/        # Route handler functions
-├── models/             # Mongoose schemas
-├── routes/             # API routes
-├── middlewares/        # Auth, error handlers, etc.
-├── config/             # DB connection, env setup
-├── server.js           # Entry point
-├── .env                # Environment variables
-├── vercel.json         # Vercel deployment config (optional)
-└── package.json
-
-````
-
 ---
 
 ## 📦 Installation & Setup
